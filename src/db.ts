@@ -1,5 +1,8 @@
 import { Sequelize } from "sequelize";
-console.log(process.env.POSTGRES_PASSWORD)
+import dotenv from 'dotenv'
+
+dotenv.config()
+
 export const sequilize = new Sequelize(
     process.env.POSTGRES_DB!,
     process.env.POSTGRES_USER!,

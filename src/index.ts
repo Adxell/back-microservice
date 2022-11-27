@@ -4,7 +4,10 @@ import { sequilize } from './db'
 
 import { ModelComments } from './models/Comments'
 
-const PORT = 5000;
+import dotenv from 'dotenv'
+
+dotenv.config()
+
 
 async function creatingModel(): Promise<void> {
     try {
