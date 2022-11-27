@@ -1,0 +1,5 @@
+node_modules
+./.gitignore
+./.env
+./docker-compose.yaml
+./nodemon.json
