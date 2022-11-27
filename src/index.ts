@@ -24,7 +24,7 @@ async function connectDB(): Promise<void> {
         console.log("Unable to connect to the databas: ", error)
     }
 }
-app.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`)
+app.listen(process.env.PORT, () => {
+    console.log(`Server running on port ${process.env.PORT}`)
     connectDB()
 })
