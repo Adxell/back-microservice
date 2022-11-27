@@ -17,6 +17,12 @@ const Comments = sequilize.define(
         avatar: {
             type: DataTypes.STRING,
         },
+        avatarName: {
+            type: DataTypes.STRING,
+        },
+        author: {
+            type: DataTypes.STRING
+        }
     }, {
     timestamps: true
 })

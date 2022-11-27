@@ -25,10 +25,12 @@ export const getComments = async (req: Request, res: Response<IResponse>) => {
 
 export const createComment = async (req: Request, res: Response<IResponse>) => {
     try {
-        const { comments, avatar } = req.body;
+        const { comments, avatar, avatarName, author } = req.body;
         const comment = ModelComments.build({
-            comments: comments,
-            avatar: avatar
+            comments,
+            avatar,
+            avatarName,
+            author
         })
 
         await comment.save()
