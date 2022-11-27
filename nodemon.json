@@ -4,8 +4,8 @@
   "ignore": [],
   "exec": "ts-node ./src/index.ts",
   "env": {
-    "POSTGRES_DB": "postgres",
+    "POSTGRES_DB": "railway",
     "POSTGRES_USER": "postgres",
-    "POSTGRES_PASSWORD": "postgres"
+    "POSTGRES_PASSWORD": "t9GwsFVI9OKI0u0RLNE6"
   }
 }
